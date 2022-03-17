@@ -9,6 +9,7 @@
 	.display-none{
 		display: none;
 	}
+
 	// form css
 	.w-radio{
     width: 33%;
@@ -542,6 +543,13 @@ input:checked + .slider:before {
 	}
 
 	@media only screen and (max-width: 540px) {
+		.input-radio{
+	    min-width: 135px;
+	  }
+		.fs-sm-12{
+			font-size: 12px !important;
+			padding: 11px 0px !important;
+		}
 		.w-radio {
     	width: 49%;
 		}
