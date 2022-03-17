@@ -5,24 +5,24 @@
 		<div class="container">
 			<div class="row py-md-5">
 				<div class="col-md-6 text-center text-md-start py-md-4">
-					<h1 class="fw-bold text-orng fs-55 mb-0 mt-2">Worried about Debts?</h1>
-					<h3 class="text-orng mb-4 mb-md-5">Now Write off up to 90% of your debt.</h3>
+					<h1 class="fw-bold text-orng fs-55 mb-0 mt-2">Struggling With Debt?</h1>
+					<h3 class="text-orng mb-4 mb-md-5">Write off up to 90% of your debt today!</h3>
 					<ul class="list-unstyled font-montserat d-none d-md-block">
 						<li class="d-flex align-items-start justify-content-start mb-2">
 							<%= image_tag('tick.png', class: 'img-check me-2')%>
-							<p class="mb-0 w-auto text-white">Write off your unsecured debts</p>
+							<p class="mb-0 w-auto text-white">Freeze your interest and charges from increasing</p>
 						</li>
 						<li class="d-flex align-items-start justify-content-start mb-2">
 							<%= image_tag('tick.png', class: 'img-check me-2')%>
-							<p class="mb-0 w-auto text-white">Take away your money worries.</p>
+							<p class="mb-0 w-auto text-white">Lower your bills to manageable monthly payments</p>
 						</li>
 						<li class="d-flex align-items-start justify-content-start mb-2">
 							<%= image_tag('tick.png', class: 'img-check me-2')%>
-							<p class="mb-0 w-auto text-white text-start">Freeze your interest and charges from increasing</p>
+							<p class="mb-0 w-auto text-white text-start">Write off your unsecured debts</p>
 						</li>
 						<li class="d-flex align-items-start justify-content-start mb-2">
 							<%= image_tag('tick.png', class: 'img-check me-2')%>
-							<p class="mb-0 w-auto text-white text-start">Lower your bills to manageable monthly payments</p>
+							<p class="mb-0 w-auto text-white text-start">Take away your money worries</p>
 						</li>
 					</ul>
 					<a href="#msform" class="d-none d-md-block">
@@ -33,7 +33,7 @@
 					 	<!-- MultiStep Form -->
 	        <div class="row w-100 mx-0 mb-4">
 	          <div class="rounded-3 bg-light-color shadow-lg py-3 min-height">
-	          	<h3 class="text-center text-orng">Please Fill in the details to Check if you Qualify</h3>
+	          	<h3 class="text-center text-orng">Check If You Qualify</h3>
 	            <form id="msform" data-details="<%= @details %>" data-parsley-validate="">
 	              <!-- progressbar -->
 	              <div class="row w-100 mx-0 justify-content-end">
@@ -52,7 +52,7 @@
 	              <fieldset class="debt-amount-field">
 	                <div class="row justify-content-center mt-4">
 	                  <div class="form-group col-12">
-                      <h6 class="d-flex justify-content-center py-2">What is you total Amount of debts?</h6>
+                      <h6 class="d-flex justify-content-center py-2">What is your total amount of debt?</h6>
                       <div class="row align-items-center justify-content-around px-md-3 mx-0 w-100 form-group mt-2 mb-1">
                         <div class="w-radio position-relative mt-2 mt-md-0">
                           <input
@@ -114,7 +114,7 @@
 	              <fieldset class="debt-number-field">
 	                <div class="row justify-content-center mt-4">
 	                  <div class="form-group col-12">
-                      <h6 class="d-flex justify-content-center py-2">Total Number of Creditors?</h6>
+                      <h6 class="d-flex justify-content-center py-2">How many debts do you have?</h6>
                       <div class="row align-items-center justify-content-around px-md-3 mx-0 w-100 form-group mt-2 mb-1">
                         <div class="w-radio position-relative mt-2 mt-md-0">
                           <input
@@ -149,43 +149,7 @@
                           value="2-3"
                           data-parsley-multiple="debt-numbr">
                           <label for="debt-numbr-2" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            2 - 3
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="debt-numbr"
-                          class="opacity-0 approve debt-numbr input-energy next cursor-p form-control"
-                          id="debt-numbr-3"
-                          data-parsley-group="block-1"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="debt-amount-field"
-                          data-current="debt-number-field"
-                          data-next="employment-status-field"
-                          value="3-5"
-                          data-parsley-multiple="debt-numbr">
-                          <label for="debt-numbr-3" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            3 - 5
-                          </label>
-                        </div>
-                         <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="debt-numbr"
-                          class="opacity-0 approve debt-numbr input-energy next cursor-p form-control"
-                          id="debt-numbr-3"
-                          data-parsley-group="block-1"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="debt-amount-field"
-                          data-current="debt-number-field"
-                          data-next="employment-status-field"
-                          value="5+"
-                          data-parsley-multiple="debt-numbr">
-                          <label for="debt-numbr-3" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            5+
+                            2 or more
                           </label>
                         </div>
                         <div class="error-checkbox"></div>
@@ -197,7 +161,7 @@
 	              <!--  -->
 	              <fieldset class="employment-status-field">
 	              	<div class=" mt-4 text-center form-group">
-                    <label class="d-flex justify-content-start mb-2">What's your Employment Status?</label>
+                    <label class="d-flex justify-content-start mb-2">What is your employment status?</label>
                     <div class="mb-3 mx-auto">
                       <select
                         class="form-control employment-status h-60"
@@ -209,13 +173,14 @@
                         data-parsley-group="block-2"
                         >
                         <option value="" selected="true" disabled="disabled">Employment Status</option>
-                        <option value="full-time-employment">Full-Time Employment</option>
-                        <option value="part-time-employment">Part-Time Employment</option>
+                        <option value="full-time-employment">Full Time Employment</option>
+                        <option value="part-time-employment">Part Time Employment</option>
+                        <option value="temporary-employment">Temporary Employment</option>
                         <option value="self-employed">Self Employed</option>
                         <option value="unemployed">Unemployed</option>
-                        <option value="retired">Retired</option>
+                        <option value="pension">Pension</option>
+                        <option value="disability benefits">Disability Benefits</option>
                         <option value="student">Student</option>
-                        <option value="other">Other</option>
                       </select>
                     </div>
                   </div>
@@ -232,88 +197,57 @@
 	              <fieldset class="residential-status-field">
 	                <div class="row justify-content-center mt-4">
 	                  <div class="form-group col-12">
-                      <h6 class="d-flex justify-content-center py-2">What's your Residential Status?</h6>
+                      <h6 class="d-flex justify-content-center py-2">What is your residential status?</h6>
                       <div class="row align-items-center justify-content-around px-md-3 mx-0 w-100 form-group mt-2 mb-1">
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="residential-status"
-                          class="opacity-0 approve residential-status input-energy next cursor-p form-control"
-                          id="residential-status-1"
-                          data-parsley-group="block-3"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-next="contact-detail-field"
-			                    data-previous="employment-status-field" 
-			             				data-current="residential-status-field"
-                          value="Owned"
-                          data-parsley-multiple="residential-status">
-                          <label for="residential-status-1" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Owned
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="residential-status"
-                          class="opacity-0 approve residential-status input-energy next cursor-p form-control"
-                          id="residential-status-2"
-                          data-parsley-group="block-3"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-next="contact-detail-field"
-			                    data-previous="employment-status-field" 
-			             				data-current="residential-status-field"
-                          value="Rented"
-                          data-parsley-multiple="residential-status">
-                          <label for="residential-status-2" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Rented
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="residential-status"
-                          class="opacity-0 approve residential-status input-energy next cursor-p form-control"
-                          id="residential-status-3"
-                          data-parsley-group="block-3"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-next="contact-detail-field"
-			                    data-previous="employment-status-field" 
-			             				data-current="residential-status-field"
-                          value="Private Rented"
-                          data-parsley-multiple="residential-status">
-                          <label for="residential-status-3" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Private Rented
-                          </label>
-                        </div>
-                         <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="residential-status"
-                          class="opacity-0 approve residential-status input-energy next cursor-p form-control"
-                          id="residential-status-3"
-                          data-parsley-group="block-3"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-next="contact-detail-field"
-			                    data-previous="employment-status-field" 
-			             				data-current="residential-status-field"
-                          value="Living With Parents"
-                          data-parsley-multiple="residential-status">
-                          <label for="residential-status-3" class="input-radio shadow rounded-3 p-2 cursor-p fs-sm-12">
-                            Living With Parents
-                          </label>
+                        <div class="position-relative mt-2 mt-md-0">
+                          <select
+                            class="form-control residential-status h-60"
+                            id="residential-status"
+                            name="residential-status"
+                            required=""
+                            data-parsley-required="true"
+                            data-parsley-required-message="Please Select Your Residential Status"
+                            data-parsley-group="block-3"
+                            >
+                            <option value="" selected="true" disabled="disabled">Residential Status</option>
+                            <option value="tenant">Tenant</option>
+                            <option value="council-tenant">Council Tenant</option>
+                            <option value="owner">Owner</option>
+                            <option value="living-with-parents">Living with Parents</option>
+                            <option value="other">Other</option>
+                          </select>
                         </div>
                         <div class="error-checkbox"></div>
                       </div>
 	                  </div>
 	                </div>
 	                <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="employment-status-field" data-current="residential-status-field"/>
+                  <input type="button"
+                    data-parsley-group="block-2"
+                    name="next"
+                    class="next action-button"
+                    value="Next"
+                    data-current="residential-status-field"
+                    data-next="contact-detail-field"/>
 	              </fieldset>
 	              <!--  -->
 	              <fieldset class="contact-detail-field">
+                  <div>
+                    <h6 class="d-flex justify-content-center py-2">You've qualified! Submit your request now and...</h6>
+                  </div>
+                  <div>
+                    <ul class="text-start">
+                      <li>
+                        Join the thousands that are writing off their debt everyday!
+                      </li>
+                      <li>
+                        Reduce monthly debt payment to as little as £85
+                      </li>
+                      <li>
+                        Get your 100% no obligation write off percentage
+                      </li>
+                    </ul>
+                  </div>
 	                <div class="row justify-content-center mt-4">
 	                  <div class="form-group col-lg-6 col-12">
 	                    <label class=" w-100 text-start mb-1 form-label">First Name</label>
@@ -425,10 +359,30 @@
 	                    class="form-control email"
 	                    placeholder="Email Address">
 	                  </div>
-	                  
+	                  <div class="custom-checkbox col-12 mx-auto">
+                      <label class="text-center form-label mb-2">Accept</label>
+                      <div class="onoffswitch mx-auto">
+                        <input type="hidden" name="c1">
+                        <input
+                          type="checkbox"
+                          name="agree"
+                          class="onoffswitch-checkbox approve"
+                          id="myonoffswitch"
+                          data-parsley-required="true"
+                          data-parsley-group="block-4"
+                          data-parsley-required-message="Please accept our terms and conditions"
+                          >
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                      </div>
+                      <div class="error-checkbox"></div>
+                      <%= render 'layouts/accept_terms'%>
+                    </div>
 	                </div>
 	                <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="residential-status-field" data-current="contact-detail-field"/>
-	                <input type="button" name="next" class="next action-button" value="Continue" data-current="contact-detail-field"/>
+	                <input type="button" name="next" class="next action-button" value="Write Off My Debt" data-current="contact-detail-field"/>
 	              </fieldset>	              
 	            </form>
 	          </div>
@@ -483,7 +437,7 @@
 					</div>
 					<div class="p-3 text-center">
 						<h4 class="text-orng">Experts Advice</h4>
-						<p class="">One of our Qualified Debt advisors will call you to discuss debt solutions for you.</p>
+						<p class="">One of our Qualified Debt advisors will call you to discuss debt solutions for you</p>
 					</div>
 				</div>
 			</div>
