@@ -87,6 +87,9 @@ class Home extends Common {
     });
 
     $(".previous").click(function(){
+      $('html,body').animate({
+        scrollTop: $("fieldset").offset().top},
+        'fast');
       var _this = this
       if(CI.animating) return false;
       CI.animating = true;

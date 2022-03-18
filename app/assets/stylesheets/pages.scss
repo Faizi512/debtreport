@@ -189,10 +189,10 @@ input:checked + .slider:before {
   }
   select.valid{
     border: 2px solid #28a745 !important;
-    background-color: aliceblue;
+    background-color: #e7f0fe;
   }
   .h-60{
-  	height: 60px;
+  	height: 50px;
   }
   input.error {
     border: 2px solid red !important;
@@ -200,7 +200,7 @@ input:checked + .slider:before {
   // end form
 	.bg-header{
 		font-family: 'Roboto Slab', serif !important;
-		background-image: asset-url("debt-head.webp");
+		background-image: asset-url("debt-bg.jpeg");
 		background-position: left;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -254,6 +254,10 @@ input:checked + .slider:before {
 	.text-blu{
 		color:  #fa9700;
 	}
+	.text-green{
+		color: #198754;
+		font-size: 26px;
+	}
 	.bg-green{
 		background-color: #06decea1 !important;
 	}
@@ -294,13 +298,14 @@ input:checked + .slider:before {
 	.findAddress-btn {
     position: absolute;
     right: 0px;
-    top: 28px;
+    top: 30px;
     border-bottom-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
 	}
 	.property{
-		height: 60px !important;
-    border: 2px solid #ced4da;
+		height: 52px !important;
+    border: 2px solid #ced4da00;
+    border-radius: 0.5rem !important;
 	}
 	.min-h-form{
 		min-height: 500px;
@@ -364,8 +369,8 @@ input:checked + .slider:before {
 	}
 	/*inputs*/
 	#msform input, #msform textarea {
-    padding: 20px;
-    border: none;
+    padding: 15px;
+    border: 2px solid transparent;
     background-color: aliceblue;
     border-radius: 8px !important;
     width: 100%;
@@ -465,7 +470,7 @@ input:checked + .slider:before {
 	}
 	.btn-success {
     box-shadow: none !important;
-    height: 62px !important;
+    height: 50px !important;
 	}
 	#progressbar li {
     list-style-type: none;

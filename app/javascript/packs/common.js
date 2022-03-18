@@ -1,5 +1,7 @@
 import 'parsleyjs/dist/parsley.min.js';
 import 'bootstrap/dist/js/bootstrap.js'
+import "@fortawesome/fontawesome-free/js/all"
+
 
 class Common {
   constructor() {
@@ -199,7 +201,7 @@ class Common {
     return {
       debt_amount: $("input[name='debt-amount']:checked").val() || this.getUrlParameter('debt_amount') || "",
       number_of_creditors: $("input[name='debt-numbr']:checked").val() || this.getUrlParameter('number_of_creditors') || "",
-      residentialStatus: $("input[name='residential-status']:checked").val() || this.getUrlParameter('residentialStatus') || "",
+      residentialStatus: $( "#residential-status option:selected" ).val() || this.getUrlParameter('residentialStatus') || "",
       employmentStatus: $( "#employment-status option:selected" ).val() || this.getUrlParameter('employmentStatus') || "",
       sid: this.getUrlParameter('sid') || 1,
       ssid: this.getUrlParameter('ssid') || 1,
