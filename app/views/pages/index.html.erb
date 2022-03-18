@@ -25,8 +25,8 @@
 							<p class="mb-0 w-auto text-white text-start">Take away your money worries</p>
 						</li>
 					</ul>
-					<a href="#msform" class="d-none d-md-block">
-						<button class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>						
+					<a href="#debt-main" class="d-none d-md-block">
+						<button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>						
 					</a>
 				</div>
 				<div class="col-md-6 py-md-4">
@@ -161,7 +161,7 @@
 	              <!--  -->
 	              <fieldset class="employment-status-field">
 	              	<div class=" mt-4 text-center form-group">
-                    <label class="d-flex justify-content-start mb-2">What is your employment status?</label>
+                    <label class="d-flex justify-content-start mb-2 fw-bold">What is your employment status?</label>
                     <div class="mb-3 mx-auto">
                       <select
                         class="form-control employment-status h-60"
@@ -197,9 +197,9 @@
 	              <fieldset class="residential-status-field">
 	                <div class="row justify-content-center mt-4">
 	                  <div class="form-group col-12">
-                      <h6 class="d-flex justify-content-center py-2">What is your residential status?</h6>
-                      <div class="row align-items-center justify-content-around px-md-3 mx-0 w-100 form-group mt-2 mb-1">
-                        <div class="position-relative mt-2 mt-md-0">
+                      <h6 class="d-flex justify-content-start py-2">What is your residential status?</h6>
+                      <div class="">
+                        <div class="position-relative">
                           <select
                             class="form-control residential-status h-60"
                             id="residential-status"
@@ -233,17 +233,20 @@
 	              <!--  -->
 	              <fieldset class="contact-detail-field">
                   <div>
-                    <h6 class="d-flex justify-content-center py-2">You've qualified! Submit your request now and...</h6>
+                    <h5 class="d-flex justify-content-start py-2 text-orng"><i class="fa-solid fa-circle-check text-green me-2"></i>You've qualified! Submit your request now and...</h5>
                   </div>
                   <div>
-                    <ul class="text-start">
-                      <li>
+                    <ul class="text-start list-unstyled">
+                      <li class="d-flex align-items-center justify-content-start">
+                      	<i class="fa-solid fa-circle-dot me-1 text-orng"></i>
                         Join the thousands that are writing off their debt everyday!
                       </li>
-                      <li>
+                      <li class="d-flex align-items-center justify-content-start">
+                      	<i class="fa-solid fa-circle-dot me-1 text-orng"></i>
                         Reduce monthly debt payment to as little as £85
                       </li>
-                      <li>
+                      <li class="d-flex align-items-center justify-content-start">
+                      	<i class="fa-solid fa-circle-dot me-1 text-orng"></i>
                         Get your 100% no obligation write off percentage
                       </li>
                     </ul>
@@ -251,7 +254,8 @@
 	                <div class="row justify-content-center mt-4">
 	                  <div class="form-group col-lg-6 col-12">
 	                    <label class=" w-100 text-start mb-1 form-label">First Name</label>
-	                    <input
+	                  	<!-- <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span> -->
+	                    <input	                    
 	                    name="first_name"
 	                    required
 	                    data-parsley-required="true"
@@ -263,6 +267,7 @@
 	                  </div>
 	                  <div class="form-group col-lg-6  col-12">
 	                    <label class=" w-100 text-start mb-1 form-label">Last Name</label>
+	                  	<!-- <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-user"></i></span> -->
 	                    <input
 	                    name="last_name"
 	                    required
@@ -275,7 +280,7 @@
 	                    placeholder="Last Name" >
 	                  </div>
 	                </div>
-	                <div class="row mt-4">
+	                <div class="row mt-1">
 	                  <!-- postcode -->
 	                  <div class="form-group col-lg-6  col-12">
 	                    <div class="w-100 justify-content-center position-relative">
@@ -327,7 +332,7 @@
 	                      >
 	                  </div>
 	                </div>
-	                <div class="row justify-content-center mt-4">
+	                <div class="row justify-content-center mt-1">
 	                  <div class="form-group col-lg-6 col-12 mb-3">
 	                    <label class=" w-100 text-start mb-1 form-label">Phone Number</label>
 	                    <input
@@ -407,8 +412,8 @@
 								<p class="mb-0 w-auto text-white text-start">Lower your bills to manageable monthly payments</p>
 							</li>
 						</ul>
-						<a href="#msform">
-							<button class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>						
+						<a href="#debt-main">
+							<button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>						
 						</a>
 	        </div>
 				</div>
@@ -454,8 +459,8 @@
 			</div>
 		</div>
 		<div class="w-100 text-center">
-			<a href="#msform">
-				<button class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat mb-5">Write off your Debts Now <%= image_tag('hand-point.png', class: 'img-hand ms-2 d-none d-md-block')%></button>				
+			<a href="#debt-main">
+				<button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat mb-5">Write off your Debts Now <%= image_tag('hand-point.png', class: 'img-hand ms-2 d-none d-md-inline-block')%></button>				
 			</a>
 		</div>
 	</div>
