@@ -5,6 +5,9 @@
 		<div class="container">
 			<div class="row py-md-5">
 				<div class="col-md-6 text-center text-md-start py-md-4">
+					<a href="/">
+						<%= image_tag('logo.png', class: 'logo-img mt-2')%>
+					</a>
 					<h1 class="fw-bold text-orng fs-55 mb-0 mt-2">Struggling With Debt?</h1>
 					<h3 class="text-orng mb-4 mb-md-5">Write off up to 90% of your debt today!</h3>
 					<ul class="list-unstyled font-montserat d-none d-md-block">
@@ -475,21 +478,5 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="container">
-		<div class="row py-3">
-			<div class="col-md-6 text-center mb-4 mb-md-0">
-				<div class="row align-items-center">
-					<div class="col-md-12">						
-						<p class="text-orng text-md-start text-center mb-0 fw-light">© 2022 Debtclear.today</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 text-center align-self-center">
-				<p class="text-orng text-center w-100 mb-0">
-					<a class="text-decoration-none text-orng" href="javascript:;">Terms &amp; Conditions</a> | <a class="text-decoration-none text-orng" href="javascript:;">Privacy Policy</a> | <a class="text-decoration-none text-orng" href="javascript:;">Cookies Policy</a>
-				</p>
-			</div>
-		</div>
-	</div>
 </div>
+<%= render 'layouts/footer'%>
