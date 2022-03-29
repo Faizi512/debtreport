@@ -1,7 +1,7 @@
 module PagesHelper
 	def home
 		@details = {
-	    camp_id: '',
+	    camp_id: 'DEBT-PREMIUM',
 	    success_url: '/success',
 	    form_name: 'home',
 	    optin_url: '/',

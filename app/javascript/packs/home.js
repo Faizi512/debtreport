@@ -46,8 +46,10 @@ class Home extends Common {
         
         if (CI.currentTab == 5) {
           if (CI.isPhone == true && CI.isEmail == true){
+            $("#submit-btn").prop("disabled", true);
             CI.postData()
           }else{
+            $("#submit-btn").prop("disabled", false);
             $('#msform').parsley().validate()
           }
           return true
