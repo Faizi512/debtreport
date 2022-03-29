@@ -26,8 +26,13 @@ class Home extends Common {
       $('.building').val($(this).find("option:selected").data("building"))
     });
 
-
-
+    $("#submit-btn").click(function(){
+      $('#msform').parsley().whenValidate({
+        group: 'block-4'
+      }).done(() =>{
+        $("#submit-btn").prop('disabled', 'disabled')
+      })
+    })
 
     $(".next").click(function(){
       var _this = this
@@ -46,10 +51,8 @@ class Home extends Common {
         
         if (CI.currentTab == 5) {
           if (CI.isPhone == true && CI.isEmail == true){
-            $("#submit-btn").prop("disabled", true);
             CI.postData()
           }else{
-            $("#submit-btn").prop("disabled", false);
             $('#msform').parsley().validate()
           }
           return true
