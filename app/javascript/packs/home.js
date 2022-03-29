@@ -26,8 +26,13 @@ class Home extends Common {
       $('.building').val($(this).find("option:selected").data("building"))
     });
 
-
-
+    $("#submit-btn").click(function(){
+      $('#msform').parsley().whenValidate({
+        group: 'block-4'
+      }).done(() =>{
+        $("#submit-btn").prop('disabled', 'disabled')
+      })
+    })
 
     $(".next").click(function(){
       var _this = this
