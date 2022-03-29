@@ -11,12 +11,22 @@
 	width: 76px;
   height: 48px;
 }
+
+
 #debt-main{
 	font-family: 'Montserrat', sans-serif !important;
 	.display-none{
 		display: none;
 	}
-
+  .loader-div{
+    position: absolute;
+    right: 35%;
+    bottom: 35px;
+  }
+  .loader-img{
+    width: 30px;
+    height: 30px;
+  }
 	// form css
 	.w-radio{
     width: 33%;
@@ -529,7 +539,20 @@ input:checked + .slider:before {
 	  -webkit-text-stroke-width: 0.5px !important;
 	  -webkit-text-stroke-color: white !important;
 	}
+
+  @media only screen and (max-width: 1024px) {
+    .loader-div{
+      position: absolute;
+      right: 30%;
+      bottom: 35px;
+    }
+  }
 	@media only screen and (max-width: 912px) {
+    .loader-div{
+      position: absolute;
+      right: 45%;
+      bottom: 35px;
+    }
 		.fs-55{
 			font-size: 47px !important;
 		}
@@ -555,6 +578,11 @@ input:checked + .slider:before {
 	}
 
 	@media only screen and (max-width: 540px) {
+    .loader-div{
+      position: absolute;
+      right: 33%;
+      bottom: 14px;
+    }
 		.input-radio{
 	    min-width: 135px;
 	  }
@@ -600,4 +628,21 @@ input:checked + .slider:before {
 	    top: -41px;
 		}
 	}
+  @media only screen and (max-width: 414px) {
+    .loader-div{
+      position: absolute;
+      right: 25%;
+      bottom: 14px;
+    }
+  }
+  @media only screen and (max-width: 280px) {
+    .w-radio {
+      width: 68%;
+    }
+    .loader-div{
+      position: absolute;
+      right: 44%;
+      bottom: 14px;
+    }
+  }
 }

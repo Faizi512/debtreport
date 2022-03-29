@@ -51,8 +51,10 @@ class Home extends Common {
         
         if (CI.currentTab == 5) {
           if (CI.isPhone == true && CI.isEmail == true){
+            $(".loader-div").removeClass("d-none")
             CI.postData()
           }else{
+            $(".loader-div").addClass("d-none")
             $('#msform').parsley().validate()
           }
           return true
