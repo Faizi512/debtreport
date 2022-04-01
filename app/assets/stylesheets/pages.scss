@@ -14,6 +14,9 @@
 
 
 #debt-main{
+  .omForm-step__header-congrats{
+    font-size: 29px !important;
+  }
   .omForm-step{
     min-height: auto !important;
   }
@@ -587,6 +590,9 @@ input:checked + .slider:before {
 	}
 
 	@media only screen and (max-width: 540px) {
+    .omForm-step__header-congrats{
+      font-size: 21px !important;
+    }
     .loader-div{
       position: absolute;
       right: 33%;
