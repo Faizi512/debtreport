@@ -1,3 +1,5 @@
+<%= javascript_pack_tag 'start', 'data-turbolinks-track': 'reload', defer: true %>
+
 <div id="debt-main">
   <div class="bg-header">
     <div class="container">
@@ -9,26 +11,24 @@
           <h1 class="fw-bold text-orng fs-49 mb-0 mt-2">Struggling With Debt?</h1>
           <h3 class="text-orng mb-4 mb-md-5">Write off up to 90% of your debt today!</h3>
           <ul class="list-unstyled font-montserat d-none d-xl-block">
-            <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
               <%= image_tag('tick.png', class: 'img-check me-2')%>
               <p class="mb-0 w-auto text-white">Freeze your interest and charges from increasing</p>
             </li>
-            <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
               <%= image_tag('tick.png', class: 'img-check me-2')%>
               <p class="mb-0 w-auto text-white">Lower your bills to manageable monthly payments</p>
             </li>
-            <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
               <%= image_tag('tick.png', class: 'img-check me-2')%>
               <p class="mb-0 w-auto text-white text-start">Write off your unsecured debts</p>
             </li>
-            <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
               <%= image_tag('tick.png', class: 'img-check me-2')%>
               <p class="mb-0 w-auto text-white text-start">Take away your money worries</p>
             </li>
           </ul>
-          <a href="#debt-main" class="d-none d-xl-block">
-            <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>           
-          </a>
+          <button type="button" class="btn btn-blue d-none d-xl-block px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>           
         </div>
         <div class="col-xl-7 py-md-4">
           <!-- MultiStep Form -->
@@ -38,26 +38,24 @@
           <!-- MultiStep Form -->
           <div class="w-100 d-block d-xl-none text-center">
             <ul class="list-unstyled font-montserat text-start pt-3">
-              <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+              <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
                 <%= image_tag('tick.png', class: 'img-check me-2')%>
                 <p class="mb-0 w-auto text-white">Write off your unsecured debts</p>
               </li>
-              <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+              <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
                 <%= image_tag('tick.png', class: 'img-check me-2')%>
                 <p class="mb-0 w-auto text-white">Take away your money worries.</p>
               </li>
-              <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+              <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
                 <%= image_tag('tick.png', class: 'img-check me-2')%>
                 <p class="mb-0 w-auto text-white text-start">Freeze your interest and charges from increasing</p>
               </li>
-              <li class="d-flex align-items-start justify-content-center justify-content-xl-start mb-2">
+              <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
                 <%= image_tag('tick.png', class: 'img-check me-2')%>
                 <p class="mb-0 w-auto text-white text-start">Lower your bills to manageable monthly payments</p>
               </li>
             </ul>
-            <a href="#debt-main">
-              <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>           
-            </a>
+            <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>           
           </div>
         </div>
       </div>
@@ -102,9 +100,7 @@
       </div>
     </div>
     <div class="w-100 text-center">
-      <a href="#debt-main">
-        <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat mb-5">Write off your Debts Now <%= image_tag('hand-point.png', class: 'img-hand ms-2 d-none d-md-inline-block')%></button>        
-      </a>
+      <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat mb-5">Write off your Debts Now <%= image_tag('hand-point.png', class: 'img-hand ms-2 d-none d-md-inline-block')%></button>        
     </div>
   </div>
   <div class="bg-light">
