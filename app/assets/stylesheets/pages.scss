@@ -14,6 +14,15 @@
 
 
 #debt-main{
+  .omForm-step{
+    min-height: auto !important;
+  }
+ .fs-49{
+    font-size: 49px !important;
+  }
+  .bg-color-light{
+    background-color: #ffffffa1;
+  }
 	font-family: 'Montserrat', sans-serif !important;
 	.display-none{
 		display: none;
@@ -605,6 +614,9 @@ input:checked + .slider:before {
 		.fs-55{
 			font-size: 30px !important;
 		}
+    .fs-49{
+      font-size: 30px !important;
+    }
   	#msform fieldset {
 	    padding: 0px;
 	    width: 100%;
