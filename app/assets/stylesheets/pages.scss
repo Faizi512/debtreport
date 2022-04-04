@@ -14,6 +14,18 @@
 
 
 #debt-main{
+  .omForm-step__header-congrats{
+    font-size: 29px !important;
+  }
+  .omForm-step{
+    min-height: auto !important;
+  }
+ .fs-49{
+    font-size: 49px !important;
+  }
+  .bg-color-light{
+    background-color: #ffffffa1;
+  }
 	font-family: 'Montserrat', sans-serif !important;
 	.display-none{
 		display: none;
@@ -578,6 +590,9 @@ input:checked + .slider:before {
 	}
 
 	@media only screen and (max-width: 540px) {
+    .omForm-step__header-congrats{
+      font-size: 21px !important;
+    }
     .loader-div{
       position: absolute;
       right: 33%;
@@ -605,6 +620,9 @@ input:checked + .slider:before {
 		.fs-55{
 			font-size: 30px !important;
 		}
+    .fs-49{
+      font-size: 30px !important;
+    }
   	#msform fieldset {
 	    padding: 0px;
 	    width: 100%;

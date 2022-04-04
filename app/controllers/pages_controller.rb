@@ -15,5 +15,8 @@ class PagesController < ApplicationController
 	def cookies
 		
 	end
+	def start
+		
+	end
 
 end
