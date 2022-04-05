@@ -46,8 +46,8 @@
   .input-energy{
     position: absolute;
     width: 114px;
-    height: 102px;
-    left: 13px;
+    height: 51px;
+    left: 5px;
     top: 0px;
   }
   .input-radio{
@@ -590,6 +590,9 @@ input:checked + .slider:before {
 	}
 
 	@media only screen and (max-width: 540px) {
+    .input-energy{
+      left: 0px;
+    }
     .omForm-step__header-congrats{
       font-size: 21px !important;
     }
