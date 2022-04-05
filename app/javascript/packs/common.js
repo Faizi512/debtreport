@@ -200,9 +200,9 @@ class Common {
 
     return {
       debt_amount: $("input[name='debt-amount']:checked").val() || this.getUrlParameter('debt_amount') || "",
-      number_creditors: $("input[name='debt-numbr']:checked").val() || this.getUrlParameter('number_creditors') || "",
-      residential_status: $( "#residential-status option:selected" ).val() || this.getUrlParameter('residential_status') || "",
-      employed: $( "#employment-status option:selected" ).val() || this.getUrlParameter('employmentStatus') || "",
+      number_of_creditors: $("input[name='debt-numbr']:checked").val() || this.getUrlParameter('number_of_creditors') || "",
+      residentialStatus: $( "#residential-status option:selected" ).val() || this.getUrlParameter('residentialStatus') || "",
+      employmentStatus: $( "#employment-status option:selected" ).val() || this.getUrlParameter('employmentStatus') || "",
       sid: this.getUrlParameter('sid') || 1,
       ssid: this.getUrlParameter('ssid') || 1,
       source: this.getUrlParameter('source') || '',
