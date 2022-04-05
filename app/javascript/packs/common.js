@@ -10,6 +10,7 @@ class Common {
     this.validate();
     this.currentTab = 0;
     this.details = {};
+    this.fillform()
   }
 
   getFormDetails(form){
@@ -189,6 +190,14 @@ class Common {
       progress.style.width = (25)+"%";
       $('.progress-percent').text("25% Complete");
     }
+  }
+
+  fillform(){
+    $(".first_name").val(this.getUrlParameter("firstname") || "");
+    $(".last_name").val(this.getUrlParameter("lastname")  || "");
+    $(".postcode").val(this.getUrlParameter("postcode")  || "");
+    $(".email").val(this.getUrlParameter("email")  || "");
+    $(".phone").val(this.getUrlParameter("phone1") || this.getUrlParameter("mobile") || "");
   }
 
 
