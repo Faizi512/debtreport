@@ -4,8 +4,9 @@
       <div class="row py-md-5">
         <div class="col-md-6 text-center text-md-start py-md-4">
           <a href="/">
-            <%= image_tag('logo.png', class: 'logo-img mt-2')%>
+            <%= image_tag('logo.png', class: 'logo-img mt-2 d-none d-md-block')%>
           </a>
+          <h5 class="text-warning w-100 text-center d-block d-md-none pt-2">DEBT CLEAR</h5>
           <h1 class="fw-bold text-orng fs-55 mb-0 mt-2">Struggling With Debt?</h1>
           <h3 class="text-orng mb-4 mb-md-5">Write off up to 90% of your debt today!</h3>
           <ul class="list-unstyled font-montserat d-none d-md-block">
@@ -375,31 +376,7 @@
                       </li>
                     </ul>
                   </div>
-                  <% if params[:action] == "sms" %>
-                    <div class="row justify-content-center mt-1">
-                      <div class="custom-checkbox col-12 mx-auto">
-                        <label class="text-center form-label mb-2">Accept</label>
-                        <div class="onoffswitch mx-auto">
-                          <input type="hidden" name="c1">
-                          <input
-                            type="checkbox"
-                            name="agree"
-                            class="onoffswitch-checkbox approve"
-                            id="myonoffswitch"
-                            data-parsley-required="true"
-                            data-parsley-group="block-4"
-                            data-parsley-required-message="Please accept our terms and conditions"
-                            >
-                          <label class="onoffswitch-label" for="myonoffswitch">
-                              <span class="onoffswitch-inner"></span>
-                              <span class="onoffswitch-switch"></span>
-                          </label>
-                        </div>
-                        <div class="error-checkbox"></div>
-                        <%= render 'layouts/accept_terms'%>
-                      </div>
-                    </div>
-                  <% else %>
+                  <% if params[:action] != "sms" %>
                     <div class="row justify-content-center mt-4">
                       <div class="form-group col-lg-6 col-12">
                         <label class=" w-100 text-start mb-1 form-label">First Name</label>
@@ -512,29 +489,29 @@
                         class="form-control email"
                         placeholder="Email Address">
                       </div>
-                      <div class="custom-checkbox col-12 mx-auto">
-                        <label class="text-center form-label mb-2">Accept</label>
-                        <div class="onoffswitch mx-auto">
-                          <input type="hidden" name="c1">
-                          <input
-                            type="checkbox"
-                            name="agree"
-                            class="onoffswitch-checkbox approve"
-                            id="myonoffswitch"
-                            data-parsley-required="true"
-                            data-parsley-group="block-4"
-                            data-parsley-required-message="Please accept our terms and conditions"
-                            >
-                          <label class="onoffswitch-label" for="myonoffswitch">
-                              <span class="onoffswitch-inner"></span>
-                              <span class="onoffswitch-switch"></span>
-                          </label>
-                        </div>
-                        <div class="error-checkbox"></div>
-                        <%= render 'layouts/accept_terms'%>
-                      </div>
                     </div>
                   <% end %>
+                  <div class="custom-checkbox col-12 mx-auto">
+                    <label class="text-center form-label mb-2">Accept</label>
+                    <div class="onoffswitch mx-auto">
+                      <input type="hidden" name="c1">
+                      <input
+                        type="checkbox"
+                        name="agree"
+                        class="onoffswitch-checkbox approve"
+                        id="myonoffswitch"
+                        data-parsley-required="true"
+                        data-parsley-group="block-4"
+                        data-parsley-required-message="Please accept our terms and conditions"
+                        >
+                      <label class="onoffswitch-label" for="myonoffswitch">
+                          <span class="onoffswitch-inner"></span>
+                          <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                    <div class="error-checkbox"></div>
+                    <%= render 'layouts/accept_terms'%>
+                  </div>
                   <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="residential-status-field" data-current="contact-detail-field"/>
                   <input id="submit-btn" type="button" name="next" class="next action-button" value="Write Off My Debt" data-current="contact-detail-field"/>
                   <div class="loader-div d-none">
