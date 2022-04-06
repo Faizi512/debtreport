@@ -376,7 +376,27 @@
                       </li>
                     </ul>
                   </div>
-                  <% if params[:action] != "sms" %>
+                  <% if params[:action] == "sms" %>
+                    <% if  params[:email].nil? || params[:email] == '' || params[:email] == '[email]' %>
+                      <div class="form-group col-lg-8 col-12  mb-3 email-div mx-auto">
+                        <label class=" w-100 text-start mb-1 form-label">Email</label>
+                        <div class="clearfix"></div>
+                        <input
+                        type="email"
+                        name="email"
+                        required
+                        data-parsley-required="true"
+                        data-parsley-required-message="Please Enter Valid Email Address"
+                        data-parsley-type="email"
+                        data-parsley-type-message="Please Enter Valid Email Address"
+                        data-parsley-group="block-4"
+                        data-parsley-validemail
+                        value=""
+                        class="form-control email"
+                        placeholder="Email Address">
+                      </div>
+                    <% end %>
+                  <%else%>
                     <div class="row justify-content-center mt-4">
                       <div class="form-group col-lg-6 col-12">
                         <label class=" w-100 text-start mb-1 form-label">First Name</label>
