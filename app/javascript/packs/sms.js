@@ -1,6 +1,6 @@
 import Common from "./common.js"
 
-class sms extends Common {
+class SMS extends Common {
   constructor() {
     super();
     var CI = this;
@@ -50,13 +50,8 @@ class sms extends Common {
         CI.next_fs = $('.'+next_field);
         
         if (CI.currentTab == 8) {
-          if (CI.isPhone == true && CI.isEmail == true){
-            $(".loader-div").removeClass("d-none")
-            CI.postData()
-          }else{
-            $(".loader-div").addClass("d-none")
-            $('#msform').parsley().validate()
-          }
+          $(".loader-div").removeClass("d-none")
+          CI.postData()
           return true
         }
         else{
@@ -173,4 +168,4 @@ class sms extends Common {
   }
 
 }
-export default new sms();
+export default new SMS();
