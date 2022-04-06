@@ -197,7 +197,6 @@ class Common {
   }
 
   getData() {
-
     return {
       debt_amount: $("input[name='debt-amount']:checked").val() || this.getUrlParameter('debt_amount') || "",
       number_creditors: $("input[name='debt-numbr']:checked").val() || this.getUrlParameter('number_creditors') || "",
