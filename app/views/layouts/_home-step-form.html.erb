@@ -377,6 +377,7 @@
                     </ul>
                   </div>
                   <% if params[:action] == "sms" %>
+                    <input type="hidden" name="page" class="page" value="sms">
                     <% if  params[:email].nil? || params[:email] == '' || params[:email] == '[email]' %>
                       <div class="form-group col-lg-8 col-12  mb-3 email-div mx-auto">
                         <label class=" w-100 text-start mb-1 form-label">Email</label>
