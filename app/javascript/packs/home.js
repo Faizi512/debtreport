@@ -50,12 +50,19 @@ class Home extends Common {
         CI.next_fs = $('.'+next_field);
         
         if (CI.currentTab == 5) {
-          if (CI.isPhone == true && CI.isEmail == true){
+          if ($(".page").val() == 'sms') {
             $(".loader-div").removeClass("d-none")
             CI.postData()
-          }else{
-            $(".loader-div").addClass("d-none")
-            $('#msform').parsley().validate()
+          }
+          else
+          {
+            if (CI.isPhone == true && CI.isEmail == true){
+              $(".loader-div").removeClass("d-none")
+              CI.postData()
+            }else{
+              $(".loader-div").addClass("d-none")
+              $('#msform').parsley().validate()
+            }
           }
           return true
         }
