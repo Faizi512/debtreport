@@ -1,4 +1,4 @@
-<%= javascript_pack_tag 'sms', 'data-turbolinks-track': 'reload', defer: true %>
+<%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload', defer: true %>
 
 <div id="debt-main">
   <div class="bg-header">
@@ -181,7 +181,7 @@
                           type="radio"
                           data-previous="debt-amount-field"
                           data-current="debt-number-field"
-                          data-next="debt-repayments-field"
+                          data-next="employment-status-field"
                           value="1"
                           data-parsley-multiple="debt-numbr">
                           <label for="debt-numbr-1" class="input-radio shadow rounded-3 p-2 cursor-p">
@@ -199,7 +199,7 @@
                           type="radio"
                           data-previous="debt-amount-field"
                           data-current="debt-number-field"
-                          data-next="debt-repayments-field"
+                          data-next="employment-status-field"
                           value="2"
                           data-parsley-multiple="debt-numbr">
                           <label for="debt-numbr-2" class="input-radio shadow rounded-3 p-2 cursor-p">
@@ -217,7 +217,7 @@
                           type="radio"
                           data-previous="debt-amount-field"
                           data-current="debt-number-field"
-                          data-next="debt-repayments-field"
+                          data-next="employment-status-field"
                           value="3"
                           data-parsley-multiple="debt-numbr">
                           <label for="debt-numbr-3" class="input-radio shadow rounded-3 p-2 cursor-p">
@@ -235,7 +235,7 @@
                           type="radio"
                           data-previous="debt-amount-field"
                           data-current="debt-number-field"
-                          data-next="debt-repayments-field"
+                          data-next="employment-status-field"
                           value="4"
                           data-parsley-multiple="debt-numbr">
                           <label for="debt-numbr-4" class="input-radio shadow rounded-3 p-2 cursor-p">
@@ -253,7 +253,7 @@
                           type="radio"
                           data-previous="debt-amount-field"
                           data-current="debt-number-field"
-                          data-next="debt-repayments-field"
+                          data-next="employment-status-field"
                           value="5"
                           data-parsley-multiple="debt-numbr">
                           <label for="debt-numbr-5" class="input-radio shadow rounded-3 p-2 cursor-p">
@@ -271,113 +271,11 @@
                           type="radio"
                           data-previous="debt-amount-field"
                           data-current="debt-number-field"
-                          data-next="debt-repayments-field"
+                          data-next="employment-status-field"
                           value="6+"
                           data-parsley-multiple="debt-numbr">
                           <label for="debt-numbr-6" class="input-radio shadow rounded-3 p-2 cursor-p">
                             6 +
-                          </label>
-                        </div>
-                        <div class="error-checkbox"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="debt-amount-field" data-current="debt-number-field"/>
-                </fieldset>
-                <!--  -->
-                <fieldset class="debt-repayments-field">
-                  <div class="row justify-content-center mt-4">
-                    <div class="form-group col-12">
-                      <h6 class="d-flex justify-content-center py-2">What is your monthly debt repayments?</h6>
-                      <div class="row align-items-center justify-content-around px-md-3 mx-0 w-100 form-group mt-2 mb-1">
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="debt-repayment"
-                          class="opacity-0 approve debt-repayment input-energy next cursor-p form-control"
-                          id="debt-repayment-1"
-                          data-parsley-group="block-2"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="debt-number-field"
-                          data-current="debt-repayments-field"
-                          data-next="employment-status-field"
-                          value="Less than £50"
-                          data-parsley-multiple="debt-repayment">
-                          <label for="debt-repayment-1" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Less than £50
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="debt-repayment"
-                          class="opacity-0 approve debt-repayment input-energy next cursor-p form-control"
-                          id="debt-repayment-2"
-                          data-parsley-group="block-2"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="debt-number-field"
-                          data-current="debt-repayments-field"
-                          data-next="employment-status-field"
-                          value="£50 - £100"
-                          data-parsley-multiple="debt-repayment">
-                          <label for="debt-repayment-2" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £50 - £100
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="debt-repayment"
-                          class="opacity-0 approve debt-repayment input-energy next cursor-p form-control"
-                          id="debt-repayment-3"
-                          data-parsley-group="block-2"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="debt-number-field"
-                          data-current="debt-repayments-field"
-                          data-next="employment-status-field"
-                          value="£100 - £150"
-                          data-parsley-multiple="debt-repayment">
-                          <label for="debt-repayment-3" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £100 - £150
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="debt-repayment"
-                          class="opacity-0 approve debt-repayment input-energy next cursor-p form-control"
-                          id="debt-repayment-4"
-                          data-parsley-group="block-2"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="debt-number-field"
-                          data-current="debt-repayments-field"
-                          data-next="employment-status-field"
-                          value="£150 - £200"
-                          data-parsley-multiple="debt-repayment">
-                          <label for="debt-repayment-4" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £150 - £200
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="debt-repayment"
-                          class="opacity-0 approve debt-repayment input-energy next cursor-p form-control"
-                          id="debt-repayment-5"
-                          data-parsley-group="block-2"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="debt-number-field"
-                          data-current="debt-repayments-field"
-                          data-next="employment-status-field"
-                          value="£200 +"
-                          data-parsley-multiple="debt-repayment">
-                          <label for="debt-repayment-5" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £200 +
                           </label>
                         </div>
                         <div class="error-checkbox"></div>
@@ -398,7 +296,7 @@
                         required=""
                         data-parsley-required="true"
                         data-parsley-required-message="Please Select Your Employment Status"
-                        data-parsley-group="block-3"
+                        data-parsley-group="block-2"
                         >
                         <option value="" selected="true" disabled="disabled">Employment Status</option>
                         <option value="Full Time Employment">Full Time Employment</option>
@@ -412,218 +310,14 @@
                       </select>
                     </div>
                   </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="debt-repayments-field" data-current="employment-status-field"/>
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="debt-number-field" data-current="employment-status-field"/>
                   <input type="button"
-                    data-parsley-group="block-3"
+                    data-parsley-group="block-2"
                     name="next" 
                     class="next action-button" 
                     value="Next"
                     data-current="employment-status-field" 
-                    data-next="monthly-income-field"/>
-                </fieldset>
-                <!--  -->
-                <fieldset class="monthly-income-field">
-                  <div class="row justify-content-center mt-4">
-                    <div class="form-group col-12">
-                      <h6 class="d-flex justify-content-center py-2">What is your total monthly income?</h6>
-                      <div class="row align-items-center justify-content-around px-md-3 mx-0 w-100 form-group mt-2 mb-1">
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="monthly-income"
-                          class="opacity-0 approve monthly-income input-energy next cursor-p form-control"
-                          id="monthly-income-1"
-                          data-parsley-group="block-4"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="employment-status-field"
-                          data-current="monthly-income-field"
-                          data-next="where-live-field"
-                          value="Less than £500"
-                          data-parsley-multiple="monthly-income">
-                          <label for="monthly-income-1" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Less than £500
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="monthly-income"
-                          class="opacity-0 approve monthly-income input-energy next cursor-p form-control"
-                          id="monthly-income-2"
-                          data-parsley-group="block-4"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="employment-status-field"
-                          data-current="monthly-income-field"
-                          data-next="where-live-field"
-                          value="£500 - £1000"
-                          data-parsley-multiple="monthly-income">
-                          <label for="monthly-income-2" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £500 - £1000
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="monthly-income"
-                          class="opacity-0 approve monthly-income input-energy next cursor-p form-control"
-                          id="monthly-income-3"
-                          data-parsley-group="block-4"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="employment-status-field"
-                          data-current="monthly-income-field"
-                          data-next="where-live-field"
-                          value="£1000 - £1500"
-                          data-parsley-multiple="monthly-income">
-                          <label for="monthly-income-3" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £1000 - £1500
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="monthly-income"
-                          class="opacity-0 approve monthly-income input-energy next cursor-p form-control"
-                          id="monthly-income-4"
-                          data-parsley-group="block-4"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="employment-status-field"
-                          data-current="monthly-income-field"
-                          data-next="where-live-field"
-                          value="£1500 - £2000"
-                          data-parsley-multiple="monthly-income">
-                          <label for="monthly-income-4" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £1500 - £2000
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="monthly-income"
-                          class="opacity-0 approve monthly-income input-energy next cursor-p form-control"
-                          id="monthly-income-5"
-                          data-parsley-group="block-4"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="employment-status-field"
-                          data-current="monthly-income-field"
-                          data-next="where-live-field"
-                          value="£2000 - £2500"
-                          data-parsley-multiple="monthly-income">
-                          <label for="monthly-income-5" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £2000 - £2500
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="monthly-income"
-                          class="opacity-0 approve monthly-income input-energy next cursor-p form-control"
-                          id="monthly-income-6"
-                          data-parsley-group="block-4"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="employment-status-field"
-                          data-current="monthly-income-field"
-                          data-next="where-live-field"
-                          value="£2500 +"
-                          data-parsley-multiple="monthly-income">
-                          <label for="monthly-income-6" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            £2500 +
-                          </label>
-                        </div>
-                        <div class="error-checkbox"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="debt-amount-field" data-current="debt-number-field"/>
-                </fieldset>
-                <!--  -->
-                <fieldset class="where-live-field">
-                  <div class="row justify-content-center mt-4">
-                    <div class="form-group col-12">
-                      <h6 class="d-flex justify-content-center py-2">Where do you live?</h6>
-                      <div class="row align-items-center justify-content-around px-md-3 mx-0 w-100 form-group mt-2 mb-1">
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="where-live"
-                          class="opacity-0 approve where-live input-energy next cursor-p form-control"
-                          id="where-live-1"
-                          data-parsley-group="block-5"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="monthly-income-field"
-                          data-current="where-live-field"
-                          data-next="residential-status-field"
-                          value="England"
-                          data-parsley-multiple="where-live">
-                          <label for="where-live-1" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            England
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="where-live"
-                          class="opacity-0 approve where-live input-energy next cursor-p form-control"
-                          id="where-live-2"
-                          data-parsley-group="block-5"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="monthly-income-field"
-                          data-current="where-live-field"
-                          data-next="residential-status-field"
-                          value="Scotland"
-                          data-parsley-multiple="where-live">
-                          <label for="where-live-2" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Scotland
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="where-live"
-                          class="opacity-0 approve where-live input-energy next cursor-p form-control"
-                          id="where-live-3"
-                          data-parsley-group="block-5"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="monthly-income-field"
-                          data-current="where-live-field"
-                          data-next="residential-status-field"
-                          value="Wales"
-                          data-parsley-multiple="where-live">
-                          <label for="where-live-3" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Wales
-                          </label>
-                        </div>
-                        <div class="w-radio position-relative mt-2 mt-md-0">
-                          <input
-                          name="where-live"
-                          class="opacity-0 approve where-live input-energy next cursor-p form-control"
-                          id="where-live-4"
-                          data-parsley-group="block-5"
-                          data-parsley-required="true"
-                          data-parsley-required-message="Please select one company"
-                          type="radio"
-                          data-previous="monthly-income-field"
-                          data-current="where-live-field"
-                          data-next="residential-status-field"
-                          value="Northern Ireland"
-                          data-parsley-multiple="where-live">
-                          <label for="where-live-4" class="input-radio shadow rounded-3 p-2 cursor-p">
-                            Northern Ireland
-                          </label>
-                        </div>
-                        <div class="error-checkbox"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="debt-amount-field" data-current="debt-number-field"/>
+                    data-next="residential-status-field"/>
                 </fieldset>
                 <!--  -->
                 <fieldset class="residential-status-field">
@@ -639,7 +333,7 @@
                             required=""
                             data-parsley-required="true"
                             data-parsley-required-message="Please Select Your Residential Status"
-                            data-parsley-group="block-6"
+                            data-parsley-group="block-3"
                             >
                             <option value="" selected="true" disabled="disabled">Residential Status</option>
                             <option value="Tenant">Tenant</option>
@@ -653,9 +347,9 @@
                       </div>
                     </div>
                   </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="where-live-field" data-current="residential-status-field"/>
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="employment-status-field" data-current="residential-status-field"/>
                   <input type="button"
-                    data-parsley-group="block-6"
+                    data-parsley-group="block-2"
                     name="next"
                     class="next action-button"
                     value="Next"
@@ -683,7 +377,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="row justify-content-center mt-1 ">
+                  <div class="row justify-content-center mt-1">
                     <div class="custom-checkbox col-12 mx-auto">
                       <label class="text-center form-label mb-2">Accept</label>
                       <div class="onoffswitch mx-auto">
@@ -694,7 +388,7 @@
                           class="onoffswitch-checkbox approve"
                           id="myonoffswitch"
                           data-parsley-required="true"
-                          data-parsley-group="block-7"
+                          data-parsley-group="block-4"
                           data-parsley-required-message="Please accept our terms and conditions"
                           >
                         <label class="onoffswitch-label" for="myonoffswitch">
