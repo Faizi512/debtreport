@@ -10,6 +10,7 @@ class Common {
     this.validate();
     this.currentTab = 0;
     this.details = {};
+    this.fillform()
   }
 
   getFormDetails(form){
@@ -191,6 +192,14 @@ class Common {
     }
   }
 
+  fillform(){
+    $(".first_name").val(this.getUrlParameter("firstname") || "");
+    $(".last_name").val(this.getUrlParameter("lastname")  || "");
+    $(".postcode").val(this.getUrlParameter("postcode")  || "");
+    $(".email").val(this.getUrlParameter("email")  || "");
+    $(".phone").val(this.getUrlParameter("phone1") || this.getUrlParameter("mobile") || "");
+  }
+
 
   showCircle(){
     $(".step").addClass("in-progress")
@@ -199,18 +208,18 @@ class Common {
   getData() {
     return {
       debt_amount: $("input[name='debt-amount']:checked").val() || this.getUrlParameter('debt_amount') || "",
-      number_creditors: $("input[name='debt-numbr']:checked").val() || this.getUrlParameter('number_creditors') || "",
-      residential_status: $( "#residential-status option:selected" ).val() || this.getUrlParameter('residential_status') || "",
-      employed: $( "#employment-status option:selected" ).val() || this.getUrlParameter('employmentStatus') || "",
+      number_of_creditors: $("input[name='debt-numbr']:checked").val() || this.getUrlParameter('number_of_creditors') || "",
+      residentialStatus: $( "#residential-status option:selected" ).val() || this.getUrlParameter('residentialStatus') || "",
+      employmentStatus: $( "#employment-status option:selected" ).val() || this.getUrlParameter('employmentStatus') || "",
       sid: this.getUrlParameter('sid') || 1,
       ssid: this.getUrlParameter('ssid') || 1,
       source: this.getUrlParameter('source') || '',
       optindate: this.getFormattedCurrentDate(),
       optinurl: 'https://debtclear.today' + window.location.pathname,
-      firstname: $(".first_name").val() || this.getUrlParameter('firstname') || '',
-      lastname: $(".last_name").val() || this.getUrlParameter('lastname') || '',
-      email: $(".email").val() || this.getUrlParameter('email') || '',
-      phone1: $(".phone").val() || this.getUrlParameter('phone1') || '',
+      firstname: this.getUrlParameter('firstname') || $(".first_name").val() ||  '',
+      lastname: this.getUrlParameter('lastname') || $(".last_name").val() ||  '',
+      email: this.getUrlParameter('email') || $(".email").val() ||  '',
+      phone1: this.getUrlParameter('phone1') || $(".phone").val() ||  '',
       ipaddress: this.details.ipaddress,
       street1: this.getUrlParameter('street1') || $(".street1").val() || $(".address").val() || 'unknown',
       street2: this.getUrlParameter('street2') || $(".street2").val() || '',
