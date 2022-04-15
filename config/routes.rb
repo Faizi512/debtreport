@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/sms', to: 'pages#sms'
   get '/success', to: 'pages#success'
   get '/cookies', to: 'pages#cookies'
+  get '/home-cookies', to: 'pages#home_cookie_policy'
+  get '/home-privacy', to: 'pages#home_privacy_policy'
   get '/privacy-policy', to: 'pages#privacy_policy'
   get '/terms-and-conditions', to: 'pages#terms_and_conditions'
 end
