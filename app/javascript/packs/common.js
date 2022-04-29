@@ -227,6 +227,10 @@ class Common {
       towncity: this.getUrlParameter('towncity') || $(".towncity").val() || 'unknown',
       postcode: this.getUrlParameter('postcode') || $(".postcode").val() || '',
       county: this.getUrlParameter('county') || $(".county").val() || '',
+      campaign_name: this.details.camp_id,
+      keyword: this.getUrlParameter('keyword') || '',
+      gclid: this.getUrlParameter('gclid') || "",
+      adgroupid: this.getUrlParameter('adgroupid') || '',
     };
   }
 
