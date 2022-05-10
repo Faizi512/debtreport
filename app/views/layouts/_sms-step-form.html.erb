@@ -28,7 +28,7 @@
             </li>
           </ul>
           <a href="#debt-main" class="d-none d-md-block">
-            <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>           
+            <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>
           </a>
         </div>
         <div class="col-md-6 py-md-4">
@@ -67,10 +67,10 @@
                           type="radio"
                           data-current="debt-amount-field"
                           data-next="debt-number-field"
-                          value="£1000 - £5000"
+                          value="£1000 - £3000"
                           data-parsley-multiple="debt-amount">
                           <label for="debt-amount-1" class="input-radio shadow rounded-3 py-2 px-0 cursor-p">
-                            £1000 - £5000
+                            £1000 - £3000
                           </label>
                         </div>
                         <div class="w-radio position-relative mt-2 mt-md-0">
@@ -84,10 +84,10 @@
                           data-next="debt-number-field"
                           data-parsley-required-message="Please select one company"
                           type="radio"
-                          value="£5000 - £6000"
+                          value="£3000 - £6000"
                           data-parsley-multiple="debt-amount">
                           <label for="debt-amount-2" class="input-radio shadow rounded-3 py-2 px-0 cursor-p">
-                            £5000 - £6000
+                            £3000 - £6000
                           </label>
                         </div>
                         <div class="w-radio position-relative mt-2 mt-md-0">
@@ -101,10 +101,10 @@
                           data-next="debt-number-field"
                           data-parsley-required-message="Please select one company"
                           type="radio"
-                          value="£6000 - £10000"
+                          value="£6000 +"
                           data-parsley-multiple="debt-amount">
                           <label for="debt-amount-3" class="input-radio shadow rounded-3 py-2 px-0 cursor-p">
-                            £6000 - £10000
+                            £6000 +
                           </label>
                         </div>
                         <div class="w-radio position-relative mt-2 mt-md-0">
@@ -312,10 +312,10 @@
                   <input type="button" name="previous" class="previous action-button-previous" value="Previous" data-previous="debt-number-field" data-current="employment-status-field"/>
                   <input type="button"
                     data-parsley-group="block-2"
-                    name="next" 
-                    class="next action-button" 
+                    name="next"
+                    class="next action-button"
                     value="Next"
-                    data-current="employment-status-field" 
+                    data-current="employment-status-field"
                     data-next="residential-status-field"/>
                 </fieldset>
                 <!--  -->
@@ -403,7 +403,7 @@
                       <div class="form-group col-lg-6 col-12">
                         <label class=" w-100 text-start mb-1 form-label">First Name</label>
                         <!-- <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span> -->
-                        <input                      
+                        <input
                         name="first_name"
                         required
                         data-parsley-required="true"
@@ -539,7 +539,7 @@
                   <div class="loader-div d-none">
                     <%= image_tag('loader.gif', class: 'loader-img')%>
                   </div>
-                </fieldset>               
+                </fieldset>
               </form>
             </div>
           </div>
@@ -564,7 +564,7 @@
               </li>
             </ul>
             <a href="#debt-main">
-              <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>           
+              <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>
             </a>
           </div>
         </div>
@@ -578,7 +578,7 @@
       <div class="col-md-6 col-lg-4 mb-3">
         <div class="rounded-3 shadow steps-div text-center">
           <div class="img-div">
-            <%= image_tag('started.png', class: 'w-100 rounded-top img-div')%>            
+            <%= image_tag('started.png', class: 'w-100 rounded-top img-div')%>
           </div>
           <div class="p-3 text-center">
             <h4 class="text-orng">Get Started</h4>
@@ -589,7 +589,7 @@
       <div class="col-md-6 col-lg-4 mb-3">
         <div class="rounded-3 shadow steps-div text-center">
           <div class="img-div">
-            <%= image_tag('advice.png', class: 'w-100 rounded-top img-div')%>           
+            <%= image_tag('advice.png', class: 'w-100 rounded-top img-div')%>
           </div>
           <div class="p-3 text-center">
             <h4 class="text-orng">Experts Advice</h4>
@@ -600,7 +600,7 @@
       <div class="col-md-6 col-lg-4 mb-3">
         <div class="rounded-3 shadow steps-div text-center">
           <div class="img-div">
-            <%= image_tag('off-debt.png', class: 'w-100 rounded-top img-div')%>           
+            <%= image_tag('off-debt.png', class: 'w-100 rounded-top img-div')%>
           </div>
           <div class="p-3 text-center">
             <h4 class="text-orng">Debt write off plan</h4>
@@ -611,7 +611,7 @@
     </div>
     <div class="w-100 text-center">
       <a href="#debt-main">
-        <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat mb-5">Write off your Debts Now <%= image_tag('hand-point.png', class: 'img-hand ms-2 d-none d-md-inline-block')%></button>        
+        <button type="button" class="btn btn-blue px-lg-5 px-4 rounded-pill text-white font-montserat mb-5">Write off your Debts Now <%= image_tag('hand-point.png', class: 'img-hand ms-2 d-none d-md-inline-block')%></button>
       </a>
     </div>
   </div>
