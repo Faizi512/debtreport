@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'pages#index'
   get '/start', to: 'pages#start'
+  get '/new', to: 'pages#new'
   get '/sms', to: 'pages#sms'
   get '/success', to: 'pages#success'
   get '/cookies', to: 'pages#cookies'
