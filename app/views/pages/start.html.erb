@@ -8,28 +8,66 @@
           <a>
             <%= image_tag('logo.png', class: 'logo-img mt-2 d-none d-md-block')%>
           </a>
-          <h5 class="text-warning w-100 text-center d-block d-md-none pt-2">DEBT REPORT</h5>
-          <h1 class="fw-bold text-orng fs-49 mb-0 mt-2">Struggling With Debt?</h1>
-          <h3 class="text-orng mb-4 mb-md-5">Write off up to 90% of your debt today!</h3>
-          <ul class="list-unstyled font-montserat d-none d-xl-block">
-            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
-              <%= image_tag('tick.png', class: 'img-check me-2')%>
-              <p class="mb-0 w-auto text-white">Freeze your interest and charges from increasing</p>
-            </li>
-            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
-              <%= image_tag('tick.png', class: 'img-check me-2')%>
-              <p class="mb-0 w-auto text-white">Lower your bills to manageable monthly payments</p>
-            </li>
-            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
-              <%= image_tag('tick.png', class: 'img-check me-2')%>
-              <p class="mb-0 w-auto text-white text-start">Write off your unsecured debts</p>
-            </li>
-            <li class="d-flex align-items-start justify-content-lg-center justify-content-xl-start justify-content-start mb-2">
-              <%= image_tag('tick.png', class: 'img-check me-2')%>
-              <p class="mb-0 w-auto text-white text-start">Take away your money worries</p>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-blue d-none d-xl-block px-lg-5 px-4 rounded-pill text-white font-montserat my-4">Check If You Qualify <%= image_tag('hand-point.png', class: 'img-hand ms-2')%></button>
+          <h5 class="text-warning w-100 text-center d-block d-md-none pt-2"><%=image_tag 'logo.png', style: "height: 50px"%></h5>
+          <h1 class="fw-bold text-center fs-49 mb-0 mt-2">How Does it work</h1>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <h3 class="mb-3"> Example Debt</h3>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td>Credit Card:</td>
+                    <td>€ 8000</td>
+                  </tr>
+                  <tr>
+                    <td>Store Card: </td>
+                    <td>€ 3000</td>
+                  </tr>
+                  <tr>
+                    <td>Bank Overdrafts: </td>
+                    <td>€ 1000</td>
+                  </tr>
+                    <tr>
+                    <td>Personal Loans: </td>
+                    <td>€ 8000</td>
+                  </tr>
+                    <tr>
+                    <td>Payday Loans: </td>
+                    <td>€ 4000</td>
+                  </tr>
+                    <tr>
+                    <td>Council Tax: </td>
+                    <td>€ 1000</td>
+                  </tr>
+                    <tr>
+                    <td>Furniture Credit: </td>
+                    <td>€ 1000</td>
+                  </tr>
+                  </tr>
+                    <tr>
+                    <td>Total: </td>
+                    <td>€ 26000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+               <h3 class="mb-3"> IVA Example</h3>
+              <div class="alert alert-danger" role="alert">
+                  Payments  before IVA: €680.00 Per month
+              </div>
+
+              <div class="alert alert-success" role="alert">
+                Payments  before IVA: €2060.00 Per month
+              </div>
+              <p class="text-danger">
+                This is an example - The reduction in monthly debt payment compared to IVA payments is down to each person's individuals
+                circumstances.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="col-xl-7 py-md-4">
           <!-- MultiStep Form -->
@@ -64,4 +102,4 @@
   </div>
 
 </div>
-<%= render 'layouts/footer'%>
+<%#= render 'layouts/footer'%>
