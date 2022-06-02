@@ -2,13 +2,25 @@
 
 <div id="debt-main">
   <div class="bg-header">
+    <div class="text-center d-block d-sm-none">
+      <%=image_tag 'logo.png',style: "height: 50px", class: ""%>
+    </div>
+    <hr class="d-block d-sm-none">
+    <div class="d-sm-none">
+      <h5 class="text-center"> Are you struggling to pay your debts each month?</h5>
+      <h4 class="text-center"> Write off 90% of your debt today! </h4>
+    </div>
     <div class="container">
       <div class="row py-md-5">
         <div class="col-xl-5 text-center text-xl-start py-md-4">
           <a>
             <%= image_tag('logo.png', class: 'logo-img mt-2 d-none d-md-block')%>
           </a>
-          <h5 class="text-warning w-100 text-center d-block d-md-none pt-2"><%=image_tag 'logo.png', style: "height: 50px"%></h5>
+          <h5 class="text-warning w-100 text-center d-none d-md-none pt-2"><%=image_tag 'logo.png', style: "height: 50px"%></h5>
+           <div class="d-none d-sm-block">
+            <h5 class="text-center"> Are you struggling to pay your debts each month?</h5>
+            <h4 class="text-center"> Write off 90% of your debt today! </h4>
+          </div>
           <h1 class="fw-bold text-center fs-49 mb-0 mt-2">How Does it work</h1>
           <div class="row mt-5">
             <div class="col-md-6">
