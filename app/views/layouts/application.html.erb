@@ -151,5 +151,24 @@
         window.addEventListener('load', addGclid);
 
 </script>
+<script>
+    window.addEventListener('load', function () {
+        var links = {
+            privacy: 'https://debtreport.org/privacy',
+            terms: 'https://debtreport.org/terms',
+        }
+        var omFormDocLink = document.querySelectorAll('.js-terms-link, .js-privacy-link');
+        omFormDocLink.length && Array.prototype.forEach.call(omFormDocLink, function (t) {
+            var e = '';
+            t.classList.contains('js-privacy-link') ? (e = links.privacy) :
+            t.classList.contains('js-terms-link') ? e = links.terms : '',
+            t.setAttribute("target", "_blank"), t.setAttribute("href", e), t.setAttribute("onclick", "");
+        });
+        var n = document.querySelectorAll("script");
+        Array.prototype.forEach.call(n, function (t) {
+            /omFormDocLink/.test(t.innerText) && t.remove()
+        })
+    });
+</script>
   </body>
 </html>
