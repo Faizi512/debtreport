@@ -56,6 +56,8 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <!-- Snap Pixel Code --> <script type='text/javascript'> (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function() {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)}; a.queue=[];var s='script';r=t.createElement(s);r.async=!0; r.src=n;var u=t.getElementsByTagName(s)[0]; u.parentNode.insertBefore(r,u);})(window,document, 'https://sc-static.net/scevent.min.js'); snaptr('init', '3e07c92a-587f-49f8-9ace-39e86052cc3d', { 'user_email': '__INSERT_USER_EMAIL__' }); snaptr('track', 'PAGE_VIEW'); </script> <!-- End Snap Pixel Code -->
+
   </head>
 
   <body>
@@ -65,6 +67,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <%= yield %>
 
+    <%= render 'layouts/footer'%>
     <!-- Meta Pixel Code -->
       <script>
       !function(f,b,e,v,n,t,s)
